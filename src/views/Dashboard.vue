@@ -10,6 +10,9 @@
 
 <script>
 export default {
+  beforeRouteEnter() {
+    console.log('beforeRouteEnter')
+  }
 }
 </script>
 
