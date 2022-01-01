@@ -3,14 +3,14 @@
     <div class="card-nav">
       <ul class="list">
         <li class="list-item" v-for="email in emails" :key="email.id">
-          <a href="#">
+          <router-link :to="'/mail/' + email.id">
             {{email.theme}}
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>
     <div class="card-body">
-      <app-email-body></app-email-body>
+      <app-email-body :mail-id="$route.params.mailId"></app-email-body>
     </div>
   </div>
 </template>
