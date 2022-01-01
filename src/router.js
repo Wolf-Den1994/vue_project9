@@ -19,7 +19,7 @@ const router = createRouter({
         console.log('beforeEnter')
       }
     },
-    { path: '/mail', component: Mail, children: [
+    { path: '/mail', component: Mail, name: 'email', children: [
         {path: ':mailId?', component: AppEmailBody, props: true }
     ]},
     // { path: '/:noteFound(.*)', redirect: '/login' }
