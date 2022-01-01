@@ -15,7 +15,6 @@
     <router-link to="forget" v-slot="{ navigate }">
       <button class="btn warning" @click="navigate">Забыл пароль?</button>
     </router-link>
-    <router-link to="forget">Забыл пароль?</router-link>
   </form>
 </template>
 

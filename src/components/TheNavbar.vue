@@ -2,9 +2,9 @@
   <header class="navbar" v-if="visible">
     <h3>GMail</h3>
     <ul class="navbar-menu">
-      <li><a href="/dashboard">Главная</a></li>
+      <li><router-link to="/dashboard">Главная</router-link></li>
       <li>
-        <a custom to="/mail">Почта</a>
+        <router-link to="/mail">Почта</router-link>
       </li>
       <li><a href="#" @click.prevent="logout">Выйти</a></li>
     </ul>
